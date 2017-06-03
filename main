@@ -1,0 +1,64 @@
+/*Programmer: Rodrigo Mesquita
+Project 9
+Date: 04/22/2016
+*/
+
+import java.awt.*;
+import javax.swing.*;
+import java.applet.Applet;
+
+public class Snowman extends JApplet{
+
+   public void init(){
+      getContentPane().setBackground(Color.lightGray);
+   
+   }
+
+   public void paint(Graphics g){
+   
+      super.paint(g);
+   
+      int gap = 150;
+      
+         
+      g.drawString("This is a snowman", 30, 20);
+      
+      g.fillRect(120, 70, 40, 50);
+      g.drawLine(100, 120, 175, 120); 
+      g.drawOval(130, 130, 7, 10); // left eye
+      g.drawOval(145, 130, 7, 10); // right eye
+      g.drawArc(122, 123, 35, 35, 0, -180);
+      g.setColor(Color.black);
+      g.drawOval(117, 120, 45, 45); // x , y , width, height
+      g.drawOval(110, 165, 60, 60);
+      g.drawOval(100, 225, 80, 80);
+   
+      g.drawString("This is a fancy snowman", gap+70, 20);
+      
+      g.fillRect(gap+120, 70, 40, 50);
+      g.drawLine(gap+100, 120, gap+175, 120); 
+      g.setColor(Color.white);
+      g.fillOval(gap+118, 120, 44, 44);
+      g.setColor(Color.red);
+      g.drawArc(gap+122, 123, 35, 35, 0, -180);
+      g.setColor(Color.blue);
+      g.drawOval(gap+130, 130, 7, 10); // left eye
+      g.drawOval(gap+145, 130, 7, 10); // right eye
+      g.setColor(Color.black);
+      g.drawOval(gap+117, 120, 45, 45); // x , y , width, height
+      g.drawOval(gap+110, 165, 60, 60);
+      g.drawOval(gap+100, 225, 80, 80);
+      g.drawLine(260, 180, 220, 210);
+      g.drawLine(100+260, 210, 100+220, 180);
+      g.setColor(Color.white);
+      g.fillOval(gap+111, 166, 58, 58);
+      g.setColor(Color.black);
+      g.fillOval(285, 175, 10, 10);
+      g.fillOval(285, 190, 10, 10);
+      g.fillOval(285, 205, 10, 10);
+      g.setColor(Color.white);
+      g.fillOval(gap+101, 226, 78, 78);
+   
+   }
+
+}
